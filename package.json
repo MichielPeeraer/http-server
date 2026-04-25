@@ -1,0 +1,35 @@
+{
+    "name": "http-server",
+    "version": "1.0.0",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "build": "npx tsc",
+        "start": "node dist/index.js",
+        "dev": "npx tsc && node dist/index.js",
+        "format": "prettier --write .",
+        "generate": "drizzle-kit generate",
+        "migrate": "drizzle-kit migrate",
+        "test": "vitest --run"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "@types/express": "^5.0.6",
+        "@types/jsonwebtoken": "^9.0.10",
+        "@types/node": "^25.6.0",
+        "drizzle-kit": "^0.31.10",
+        "prettier": "^3.8.3",
+        "typescript": "^6.0.2",
+        "vitest": "^4.1.4"
+    },
+    "dependencies": {
+        "argon2": "^0.44.0",
+        "drizzle-orm": "^0.45.2",
+        "express": "^5.2.1",
+        "jsonwebtoken": "^9.0.3",
+        "postgres": "^3.4.9"
+    }
+}
