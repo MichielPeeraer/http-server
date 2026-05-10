@@ -6,12 +6,7 @@ import {
     getChirp,
     getChirps,
 } from "../db/queries/chirps.js";
-import {
-    BadRequestError,
-    ForbiddenError,
-    NotFoundError,
-    UnauthorizedError,
-} from "./errors.js";
+import { BadRequestError, ForbiddenError, NotFoundError } from "./errors.js";
 import { getBearerToken, validateJWT } from "../auth.js";
 import { config } from "../config.js";
 
